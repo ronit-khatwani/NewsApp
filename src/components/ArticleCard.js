@@ -95,7 +95,7 @@ const ArticleCard = ({ article, onPress, index = 0 }) => {
       
       // Check if the tap was NOT on the bookmark button area (bottom right)
       const cardWidth = CARD_WIDTH;
-      const calculatedCardHeight = calculateCardHeight();
+      const calculatedCardHeight = cardHeight; // Use pre-calculated value instead of calling function
       const bookmarkAreaLeft = cardWidth - 60; // 60px from right edge
       const bookmarkAreaTop = calculatedCardHeight - 60; // 60px from bottom
       
